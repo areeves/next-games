@@ -1,6 +1,6 @@
 import { useReducer } from 'react'
 
-import Result from '../components/result.tsx'
+import Result from '../components/result'
 
 const initialState = {
   phase: 'playing',
