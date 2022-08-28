@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { ImHome3 } from 'react-icons/im'
 
-export default function Layout({ children }) {
+export default function Layout({ voiceSelector, children }) {
   return (
     <>
     <div className="container flex flex-col items-center">
@@ -17,6 +17,7 @@ export default function Layout({ children }) {
         { children }
       </div>
     </div>
+    <div className="mt-4">{voiceSelector}</div>
     </>
   )
 }
